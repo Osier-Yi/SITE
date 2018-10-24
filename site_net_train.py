@@ -27,14 +27,10 @@ tf.app.flags.DEFINE_integer('dim_in', 100, """Pre-representation layer dimension
 tf.app.flags.DEFINE_integer('dim_out', 100, """Post-representation layer dimensions. """)
 tf.app.flags.DEFINE_integer('batch_norm', 0, """Whether to use batch normalization. """)
 tf.app.flags.DEFINE_string('normalization', 'none', """How to normalize representation (after batch norm). none/bn_fixed/divide/project """)
-tf.app.flags.DEFINE_float('rbf_sigma', 0.1, """RBF MMD sigma """)
 tf.app.flags.DEFINE_integer('experiments', 1, """Number of experiments. """)
 tf.app.flags.DEFINE_integer('iterations', 2000, """Number of iterations. """)
 tf.app.flags.DEFINE_float('weight_init', 0.01, """Weight initialization scale. """)
 tf.app.flags.DEFINE_float('lrate_decay', 0.95, """Decay of learning rate every 100 iterations """)
-tf.app.flags.DEFINE_integer('wass_iterations', 20, """Number of iterations in Wasserstein computation. """)
-tf.app.flags.DEFINE_float('wass_lambda', 1, """Wasserstein lambda. """)
-tf.app.flags.DEFINE_integer('wass_bpt', 0, """Backprop through T matrix? """)
 tf.app.flags.DEFINE_integer('varsel', 0, """Whether the first layer performs variable selection. """)
 tf.app.flags.DEFINE_string('outdir', '../results/ihdp/', """Output directory. """)
 tf.app.flags.DEFINE_string('datadir', '../data/', """Data directory. """)
@@ -60,7 +56,7 @@ tf.app.flags.DEFINE_float('dim_pddm', 100.0, """Dimension in PDDM fist layer """
 tf.app.flags.DEFINE_float('dim_c', 100.0, """Dimension in PDDM unit for c """)
 tf.app.flags.DEFINE_float('dim_s', 100.0, """Dimension in PDDM unit for s """)
 tf.app.flags.DEFINE_string('propensity_dir','./propensity_score/ihdp_propensity_model.sav', """Dir where the propensity model is saved""" )
-tf.app.flags.DEFINE_boolean('equal_sample', 0, """Whether to equal sample with different labels. """)
+tf.app.flags.DEFINE_boolean('equal_sample', 0, """Whether to fectch equal number of samples with different labels. """)
 
 if FLAGS.sparse:
     import scipy.sparse as sparse

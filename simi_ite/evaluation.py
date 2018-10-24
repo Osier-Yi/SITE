@@ -145,7 +145,6 @@ def evaluate_bin_att(predictions, data, i_exp, I_subset=None,
         policy_value, policy_curve = \
             policy_val(t[e > 0], yf[e > 0], eff_pred[e > 0], compute_policy_curve)
 
-        # pehe_appr = pehe_nn(yf_p, ycf_p, yf, x, t, nn_t, nn_c)
         pehe_appr = np.nan
 
         return {'ate_pred': ate_pred, 'att_pred': att_pred,

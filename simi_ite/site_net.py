@@ -6,7 +6,7 @@ from util import *
 class site_net(object):
 
 
-    def __init__(self, x, t, y_ , p_t, FLAGS, r_lambda, do_in, do_out, dims, three_pairs,  three_pairs_simi, r_mid_point_mini, r_pddm):
+    def __init__(self, x, t, y_ , p_t, FLAGS, r_lambda, do_in, do_out, dims, three_pairs, three_pairs_simi, r_mid_point_mini, r_pddm):
         self.variables = {}
         self.wd_loss = 0
 
