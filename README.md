@@ -31,14 +31,14 @@ python evaluate.py configs/ihdp.txt 1
 ```
 
 If you use SITE in your research please cite this paper:
-
+```
 @inproceedings{SITE2018,
 	author = {Liuyi Yao, Sheng Li, Yangliang Li, Mengdi Huai, Jing Gao, Aidong Zhang},
 	title = {Representation Learning for Treatment Effect Estimation from Observational Data},
 	booktitle = {Neural Information Processing Systems},
 	year = {2018}
 }
-
+```
 # Reference:
 
 Liuyi Yao, Sheng Li, Yaliang Li, Mengdi Huai, Jing Gao, Aidong Zhang. Representation Learning for Treatment Effect Estimation from Observational Data, 32nd Conference on Neural Information Processing Systems (NIPS), December 2018
