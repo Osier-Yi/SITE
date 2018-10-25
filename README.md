@@ -2,7 +2,7 @@
 
 This is the code for the paper "Representation Learning for Treatment Effect Estimation from Observational Data" at NIPS'18. It is written in python by numpy 1.14.2 and tensorflow 1.7.0.
 
-If you use SITE in your research please cite this paper:
+If you use SITE in your research, please cite this paper:
 ```
 @inproceedings{SITE2018,
 	author = {Liuyi Yao, Sheng Li, Yangliang Li, Mengdi Huai, Jing Gao, Aidong Zhang},
@@ -12,7 +12,7 @@ If you use SITE in your research please cite this paper:
 }
 ```
 
-The code of SITE （local Similarity preserved Individual Treatment Effect estimation), which jointly preserves the local similarity information and balances
+The code of SITE (local **S**imilarity preserved **I**ndividual **T**reatment **E**ffect estimation), which jointly preserves the local similarity information and balances
 the distributions of control and treated groups, is built upon the Counterfactual regression (CFR) work of Johansson, Shalit & Sontag (2016) and Shalit, Johansson & Sontag (2016), https://github.com/clinicalml/cfrnet. The parameter random searching, network training and evaluation follow the procedures of CFR to ensure fair comparison. 
 
 SITE preserves local similarity and balances data distributions simultaneously, by focusing on several hard samples in each mini-batch. SITE first calculates the propensity score by propensity_score_calculation.py. Then the tensorflow graph of SITE is defined in simi_ite/site_net.py. 
