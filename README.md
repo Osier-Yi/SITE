@@ -1,6 +1,6 @@
 # SITE
 
-This is the code for the paper "Representation Learning for Treatment Effect Estimation from Observational Data" at NIPS'18. It is written in python by numpy 1.14.2 and tensorflow 1.7.0.
+This is the code for the paper "Representation Learning for Treatment Effect Estimation from Observational Data" at NIPS'18. It is written in python 2.7 with numpy 1.14.2 and tensorflow 1.7.0.
 
 If you use SITE in your research, please cite this paper:
 ```
