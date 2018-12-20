@@ -42,4 +42,4 @@ python evaluate.py configs/ihdp.txt 1
 
 # Reference:
 
-Liuyi Yao, Sheng Li, Yaliang Li, Mengdi Huai, Jing Gao, Aidong Zhang. Representation Learning for Treatment Effect Estimation from Observational Data, 32nd Conference on Neural Information Processing Systems (NIPS), December 2018
+Liuyi Yao, Sheng Li, Yaliang Li, Mengdi Huai, Jing Gao, Aidong Zhang. Representation Learning for Treatment Effect Estimation from Observational Data, 32nd Conference on Neural Information Processing Systems (NeurIPS), December 2018
