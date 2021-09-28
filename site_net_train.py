@@ -450,7 +450,8 @@ def run(outdir):
         all_preds_test.append(preds_test)
         all_losses.append(losses)
 
-        ''' Fix shape for output (n_units, dim, n_reps, n_outputs) '''
+        # ''' Fix shape for output (n_units, dim, n_reps, n_outputs) '''
+        ''' Fix shape for output (n_units, dim, n_experiments, n_train_iterations) '''
         out_preds_train = np.swapaxes(np.swapaxes(all_preds_train,1,3),0,2)
         if  has_test:
             out_preds_test = np.swapaxes(np.swapaxes(all_preds_test,1,3),0,2)
